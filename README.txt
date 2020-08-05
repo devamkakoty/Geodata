@@ -3,7 +3,7 @@ Visualizing Data on Google Map
 
 In this project, we are using the Google geocoding API
 to clean up some user-entered geographic locations of
-university names and then placing the data on a Google
+university names and then place the data on a Google
 Map.
 
 Note: Windows has difficulty in displaying UTF-8 characters
@@ -41,21 +41,6 @@ in the database and if we don't have the data for the location,
 call the geocoding API to retrieve the data and store it in
 the database.
 
-As of December 2016, the Google Geocoding APIs changed dramatically.
-They moved some functionality that we use from the Geocoding API
-into the Places API.  Also all the Google Geo-related APIs require an
-API key. To complete this assignment without a Google account,
-without an API key, or from a country that blocks
-access to Google, you can use a subset of that data which is
-available at:
-
-http://py4e-data.dr-chuck.net/json
-
-To use this, simply leave the api_key set to False in 
-geoload.py.
-
-This URL only has a subset of the data but it has no rate limit so
-it is good for testing.
 
 If you want to try this with the API key, follow the
 instructions at:
@@ -132,9 +117,7 @@ myData = [
    ...
 ];
 
-This is a JavaScript list of lists.  The syntax for JavaScript
-list constants is very similar to Python so the syntax should
-be familiar to you.
+This is a JavaScript list of lists.
 
 Simply open where.html in a browser to see the locations.  You
 can hover over each map pin to find the location that the
