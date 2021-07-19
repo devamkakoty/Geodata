@@ -2,17 +2,8 @@ Using the Google Places API with a Database and
 Visualizing Data on Google Map
 
 In this project, we are using the Google geocoding API
-to clean up some user-entered geographic locations of
-university names and then place the data on a Google
+to clean up some user-entered geographic locations and then place the data on a Google
 Map.
-
-Note: Windows has difficulty in displaying UTF-8 characters
-in the console so for each command window you open, you may need
-to type the following command before running this code:
-
-    chcp 65001
-
-http://stackoverflow.com/questions/388490/unicode-characters-in-windows-command-line-how
 
 
 You should install the SQLite browser to view and modify
@@ -49,33 +40,7 @@ https://developers.google.com/maps/documentation/geocoding/intro
 
 and put the API key in the code.
 
-Here is a sample run after there is already some data in the
-database:
 
-Mac: python3 geoload.py
-Win: geoload.py
-
-Found in database  Northeastern University
-
-Found in database  University of Hong Kong, Illinois Institute of Technology, Bradley University
-
-Found in database  Technion
-
-Found in database  Viswakarma Institute, Pune, India
-
-Found in database  UMD
-
-Found in database  Tufts University
-
-Resolving Monash University
-Retrieving http://py4e-data.dr-chuck.net/json?key=42&address=Monash+University
-Retrieved 2063 characters {    "results" : [
-{u'status': u'OK', u'results': ... }
-
-Resolving Kokshetau Institute of Economics and Management
-Retrieving http://py4e-data.dr-chuck.net/json?key=42&address=Kokshetau+Institute+of+Economics+and+Management
-Retrieved 1749 characters {    "results" : [
-{u'status': u'OK', u'results': ... }
 
 The first five locations are already in the database and so they
 are skipped.  The program scans to the point where it finds un-retrieved
@@ -121,7 +86,5 @@ This is a JavaScript list of lists.
 
 Simply open where.html in a browser to see the locations.  You
 can hover over each map pin to find the location that the
-gecoding API returned for the user-entered input.  If you
-cannot see any data when you open the where.html file, you might
-want to check the JavaScript or developer console for your browser.
+gecoding API returned for the user-entered input.  
 
